@@ -1,0 +1,38 @@
+.sidebar {
+    width: 80px;
+    height: 100vh;
+    background-color: #0f2b37; /* Warna biru tua seperti di Figma */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 20px;
+  }
+  
+  .link {
+    width: 60px;
+    height: 60px;
+    background-color: #cfd0d1; /* Abu-abu terang untuk ikon */
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .link:hover {
+    background-color: #a0a0a0;
+    transform: scale(1.05);
+  }
+  
+  .active {
+    background-color: #548194; /* Biru terang saat aktif */
+    border-radius: 15px;
+  }
+  
+  .link_text {
+    display: none; /* Teks disembunyikan seperti di Figma */
+  }
+  
