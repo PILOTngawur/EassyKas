@@ -1,38 +1,43 @@
+.main-layout {
+  display: flex;
+  height: calc(100vh - 60px); /* assuming navbar height is 60px */
+}
+
 .sidebar {
-    width: 80px;
-    height: 100vh;
-    background-color: #0f2b37; /* Warna biru tua seperti di Figma */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    gap: 20px;
-  }
-  
-  .link {
-    width: 60px;
-    height: 60px;
-    background-color: #cfd0d1; /* Abu-abu terang untuk ikon */
-    border-radius: 10px;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    transition: background 0.3s, transform 0.2s;
-  }
-  
-  .link:hover {
-    background-color: #a0a0a0;
-    transform: scale(1.05);
-  }
-  
-  .active {
-    background-color: #548194; /* Biru terang saat aktif */
-    border-radius: 15px;
-  }
-  
-  .link_text {
-    display: none; /* Teks disembunyikan seperti di Figma */
-  }
-  
+  width: 80px;
+  background-color: #0e2a33;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.link {
+  background-color: #d3d3d3; /* default background */
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link .icon {
+  font-size: 24px;
+  color: black;
+}
+
+.link.active {
+  background-color: #5ba7d8; /* biru sesuai desain Figma */
+}
+
+.main-content {
+  flex-grow: 1;
+  background-color: #fff;
+  padding: 20px;
+  overflow-y: auto;
+}

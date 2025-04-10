@@ -1,0 +1,45 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .saldo-box {
+    background: linear-gradient(to right, #62b3cd, #386675);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .saldo-box .label {
+    font-size: 14px;
+  }
+  
+  .saldo-box .amount {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .box-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .box {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .pemasukan {
+    background-color: #90ee90;
+  }
+  
+  .pengeluaran {
+    background-color: #f08080;
+  }
+  
