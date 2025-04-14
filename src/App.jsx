@@ -6,6 +6,8 @@ import Catatkas from './pages/Catatkas'
 import Pengeluarankas from './pages/Pengeluarankas'
 import Laporan from './pages/Laporan'
 import Dashboard from './pages/dashboard'
+import "bootstrap"
+
 
 function App() {
   return (
