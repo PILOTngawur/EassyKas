@@ -1,0 +1,41 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d9d9d9;
+  padding: 10px 20px;
+}
+
+.navbarLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  display: block;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 40px;
+  font-family: 'Candal';
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.navbarRight {
+  display: flex;
+  align-items: center;
+}
+
+.userIcon {
+  width: 48px;
+  height: 48px;
+  background-color: #bfbfbf;
+  border-radius: 50%;
+}

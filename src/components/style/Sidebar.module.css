@@ -1,6 +1,6 @@
-.main-layout {
+.mainLayout {
   display: flex;
-  height: calc(100vh - 60px); /* assuming navbar height is 60px */
+  height: calc(100vh - 60px);
 }
 
 .sidebar {
@@ -14,7 +14,7 @@
 }
 
 .link {
-  background-color: #d3d3d3; /* default background */
+  background-color: #d3d3d3;
   transition: background-color 0.3s ease;
   padding: 10px;
   border-radius: 12px;
@@ -26,16 +26,16 @@
   align-items: center;
 }
 
-.link .icon {
+.icon {
   font-size: 24px;
   color: black;
 }
 
-.link.active {
-  background-color: #5ba7d8; /* biru sesuai desain Figma */
+.active {
+  background-color: #5ba7d8;
 }
 
-.main-content {
+.mainContent {
   flex-grow: 1;
   background-color: #fff;
   padding: 20px;

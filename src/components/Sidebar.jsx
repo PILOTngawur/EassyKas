@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './navbar'
+import Navbar from './Navbar'
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -9,7 +9,7 @@ import {
   faReceipt,
   faBook
 } from '@fortawesome/free-solid-svg-icons'
-import './style/Sidebar.css'
+import styles from './style/Sidebar.module.css'
 
 function Sidebar({ children }) {
   const menuitem = [
@@ -23,16 +23,23 @@ function Sidebar({ children }) {
   return (
     <div>
       <Navbar />
-      <div className="main-layout">
-        <div className="sidebar">
+      <div className={styles.mainLayout}>
+        <div className={styles.sidebar}>
           {menuitem.map((item, index) => (
-            <NavLink to={item.path} key={index} 
-            className={({ isActive }) => isActive ? "link active" : "link"}>
-              <div className="icon"><FontAwesomeIcon icon={item.icon} /></div>
+            <NavLink
+              to={item.path}
+              key={index}
+              className={({ isActive }) =>
+                isActive ? `${styles.link} ${styles.active}` : styles.link
+              }
+            >
+              <div className={styles.icon}>
+                <FontAwesomeIcon icon={item.icon} />
+              </div>
             </NavLink>
           ))}
         </div>
-        <div className="main-content">
+        <div className={styles.mainContent}>
           {children}
         </div>
       </div>

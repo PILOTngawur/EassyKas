@@ -1,0 +1,39 @@
+.catatkasContainer {
+  font-family: Arial, sans-serif;
+}
+
+.catatkasHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.catatkasBox label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.catatkasBox input {
+  padding: 5px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.btnTambah {
+  background-color: #00c4cc;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cardList {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-top: 20px;
+}

@@ -1,26 +1,26 @@
-.siswa-container {
+.pengeluaranContainer {
     font-family: Arial, sans-serif;
   }
   
-  .siswa-header {
+  .pengeluaranHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
   }
   
-  .search-box label {
+  .pengeluaranBox label {
     font-weight: bold;
     margin-right: 10px;
   }
   
-  .search-box input {
+  .pengeluaranBox input {
     padding: 5px;
     border: 1px solid #aaa;
     border-radius: 4px;
   }
   
-  .btn-tambah {
+  .btnTambah {
     background-color: #00c4cc;
     color: white;
     border: none;
@@ -30,43 +30,55 @@
     font-weight: bold;
   }
   
-  .btn-tambah:hover {
+  .btnTambah:hover {
     background-color: #00a3a9;
   }
-  
-  .siswa-table {
+
+  .siswaTable {
     width: 100%;
     border-collapse: collapse;
   }
   
-  .siswa-table th {
+  .siswaTable th {
     background-color: #2f5f70;
     color: white;
     padding: 10px;
     text-align: left;
   }
   
-  .siswa-table td {
+  .siswaTable td {
     border: 1px solid #888;
     padding: 10px;
   }
-
-.siswa-table th:nth-child(1),
-.siswa-table td:nth-child(1) {
-  width: 5%; 
-}
-.siswa-table th:nth-child(3),
-.siswa-table td:nth-child(3) {
-  width: 10%; 
-  text-align: center;
-}
-.siswa-table th:nth-child(4),
-.siswa-table td:nth-child(4) {
-  width: 20%;
-}
   
-  .btn-edit,
-  .btn-hapus {
+  .siswaTable th:nth-child(1),
+  .siswaTable td:nth-child(1) {
+    width: 5%;
+  }
+  
+  .siswaTable th:nth-child(2),
+  .siswaTable td:nth-child(2) {
+    width: 50%;
+  }
+
+  .siswaTable th:nth-child(3),
+  .siswaTable td:nth-child(3) {
+    font-size: smaller;
+    width: 10%;
+  }
+  
+  .siswaTable th:nth-child(4),
+  .siswaTable td:nth-child(4) {
+    width: 5%;
+  }
+
+  .siswaTable th:nth-child(5),
+  .siswaTable td:nth-child(5) {
+    width: 15%;
+  }
+  
+  .btnEdit,
+  .btnHapus {
     padding: 4px 10px;
     margin-right: 5px;
     border: none;
@@ -75,22 +87,21 @@
     font-weight: bold;
   }
   
-  .btn-edit {
+  .btnEdit {
     background-color: #ffc107;
     color: black;
   }
   
-  .btn-hapus {
+  .btnHapus {
     background-color: #dc3545;
     color: white;
   }
-
-  .btn-edit:hover {
+  
+  .btnEdit:hover {
     background-color: #d39f04;
   }
-
-  .btn-hapus:hover{
+  
+  .btnHapus:hover {
     background-color: #b12b38;
     color: white;
   }
-  
