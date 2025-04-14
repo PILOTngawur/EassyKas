@@ -1,23 +1,20 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import './style/Dashboard.css'
-
+import styles from './style/Dashboard.module.css'
 
 function Dashboard() {
   return (
-    <div className="dashboard">
-      <div className="saldo-box">
+    <div className={styles.dashboard}>
+      <div className={styles.saldoBox}>
         <div className="label">Saldo Tersedia</div>
-        <div className="amount"></div>
+        <div className="amount">Rp 0</div>
       </div>
-      <div className="box-container">
-        <div className="box pemasukan">
+      <div className={styles.boxContainer}>
+        <div className={`${styles.box} ${styles.pemasukan}`}>
           <div className="title">Pemasukan</div>
-          
         </div>
-        <div className="box pengeluaran">
+        <div className={`${styles.box} ${styles.pengeluaran}`}>
           <div className="title">Pengeluaran</div>
-          
         </div>
       </div>
     </div>

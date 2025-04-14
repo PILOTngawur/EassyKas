@@ -1,0 +1,54 @@
+.cardKas {
+  background-color: #f0e6d2;
+  border: 1px solid #999;
+  border-radius: 10px;
+  width: 200px;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 5px #aaa;
+  font-family: sans-serif;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.kasMingguan {
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+.totalKas {
+  background-color: #4ade80;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 5px 0 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.btnCatat {
+  background-color: #06b6d4;
+  color: black;
+  border: none;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btnHapus {
+  background-color: #f87171;
+  color: black;
+  border: none;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}

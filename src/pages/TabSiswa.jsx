@@ -1,25 +1,25 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import './style/TabSiswa.css'
-import { 
+import {
   faMagnifyingGlass,
   faTrash,
   faPencil
- } from '@fortawesome/free-solid-svg-icons';
+} from '@fortawesome/free-solid-svg-icons'
+import styles from './style/TabSiswa.module.css'
 
 function TabSiswa() {
   return (
-    <div className="siswa-container">
-      <div className="siswa-header">
-        <div className="search-box">
+    <div className={styles.siswaContainer}>
+      <div className={styles.siswaHeader}>
+        <div className={styles.searchBox}>
           <label htmlFor="search">SEARCH :</label>
           <input type="text" id="search" placeholder="Cari nama siswa..." />
           <button><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
         </div>
-        <button className="btn-tambah">+ TAMBAH SISWA</button>
+        <button className={styles.btnTambah}>+ TAMBAH SISWA</button>
       </div>
 
-      <table className="siswa-table">
+      <table className={styles.siswaTable}>
         <thead>
           <tr>
             <th>NO</th>
@@ -34,15 +34,19 @@ function TabSiswa() {
             <td>Example</td>
             <td>Aktif</td>
             <td>
-              <button className="btn-edit"><FontAwesomeIcon icon={faPencil} />Edit</button>
-              <button className="btn-hapus"><FontAwesomeIcon icon={faTrash} />Hapus</button>
+              <button className={styles.btnEdit}>
+                <FontAwesomeIcon icon={faPencil} /> Edit
+              </button>
+              <button className={styles.btnHapus}>
+                <FontAwesomeIcon icon={faTrash} /> Hapus
+              </button>
             </td>
           </tr>
           {/* Data dinamis nanti bisa ditambahkan di sini */}
         </tbody>
       </table>
     </div>
-  );
+  )
 }
 
 export default TabSiswa
