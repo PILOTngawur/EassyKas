@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import EassyKaslogo from "../assets/EassyKaslogo.png"
 import "./style/Navbar.css"; // optional
 
 function Navbar() {
@@ -19,7 +20,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar-left">
-        <div className="logo">LOGO.PNG</div>
+        <div className="logo"><img src={EassyKaslogo} alt="Logo" /></div>
         <span className="title">{title}</span>
       </div>
       <div className="navbar-right">
