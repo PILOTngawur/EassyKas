@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const CreatSiswa = () => {
   const [values, setValues] = useState({
-    nama_siswa: "",
+    nama: "",
     status: "",
   })
   const navigate = useNavigate();
@@ -21,16 +21,16 @@ const CreatSiswa = () => {
       <h1>Tambah Data Siswa</h1>
       <form className="w-50" onSubmit={(handleSubmit)}>
         <div className="mb-3 mt-3">
-          <label htmlFor="nama_siswa" className="form-label">
+          <label htmlFor="nama" className="form-label">
             Nama Siswa:
           </label>
           <input
             type="text"
             class="form-control"
-            id="nama_siswa"
+            id="nama"
             placeholder="Masukan nama siswa"
-            name="nama_siswa"
-            onChange={(e) => setValues({...values, nama_siswa: e.target.value})}
+            name="nama"
+            onChange={(e) => setValues({...values, nama: e.target.value})}
           />
         </div>
         <div className="mb-3">

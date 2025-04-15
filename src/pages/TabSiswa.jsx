@@ -66,7 +66,7 @@ function TabSiswa() {
                 siswas.map(siswa =>
                     <tr key={siswa.id}>
                         <td>{siswa.id}</td>
-                        <td>{siswa.nama_siswa}</td>
+                        <td>{siswa.nama}</td>
                         <td>{siswa.status}</td>
                         <td>
                             <Link to={`/tabsiswa/update/${siswa.id}`} className={styles.btnEdit}  ><FontAwesomeIcon icon={faPencil} /> Edit</Link>

@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 const UpdateSiswa = () => {
   const { id } = useParams();
   const [values, setValues] = useState({
-    nama_siswa: "",
+    nama: "",
     status: "",
   });
   const navigate = useNavigate();
@@ -25,7 +25,7 @@ const UpdateSiswa = () => {
       .then((res) =>
         setValues({
           ...values,
-          nama_siswa: res.data[0].nama_siswa,
+          nama: res.data[0].nama,
           status: res.data[0].status,
         })
       )
@@ -36,18 +36,18 @@ const UpdateSiswa = () => {
       <h1>Update Data Siswa</h1>
       <form className="w-50" onSubmit={handleSubmit}>
         <div className="mb-3 mt-3">
-          <label htmlFor="nama_siswa" className="form-label">
+          <label htmlFor="nama" className="form-label">
             Nama Siswa:
           </label>
           <input
             type="text"
             className="form-control"
-            id="nama_siswa"
+            id="nama"
             placeholder="Masukan nama siswa"
-            name="nama_siswa"
-            value={values.nama_siswa}
+            name="nama"
+            value={values.nama}
             onChange={(e) =>
-              setValues({ ...values, nama_siswa: e.target.value })
+              setValues({ ...values, nama: e.target.value })
             }
           />
         </div>
