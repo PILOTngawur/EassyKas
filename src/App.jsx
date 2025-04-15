@@ -1,11 +1,11 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Sidebar from './components/sidebar'
+import Sidebar from './components/Sidebar'
 import TabSiswa from './pages/TabSiswa'
 import Catatkas from './pages/Catatkas'
 import Pengeluarankas from './pages/Pengeluarankas'
 import Laporan from './pages/Laporan'
-import Dashboard from './pages/dashboard'
+import Dashboard from './pages/Dashboard'
 import "bootstrap"
 import CreatSiswa from './pages/TabSiswa/CreatSiswa'
 import UpdateSiswa from './pages/TabSiswa/UpdateSiswa'

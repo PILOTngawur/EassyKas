@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import EassyKaslogo from "../assets/EassyKaslogo.png"
+import EassyKaslogo from "../assets/Eassykaslogo.png";
 import styles from './style/Navbar.module.css';
 import '@fontsource/candal';
 
